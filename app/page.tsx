@@ -43,6 +43,13 @@ export default function Home() {
             <Skill skill="TypeScript" />
             <Skill skill="React" />
             <Skill skill="Next.js" />
+            <Skill skill="REST" />
+            <Skill skill="GraphQL" />
+            <Skill skill="Redux" />
+            <Skill skill="Zustand" />
+            <Skill skill="RTK Query" />
+            <Skill skill="i18n" />
+            <Skill skill="Zustand" />
             <Skill skill="Jest" />
             <Skill skill="Vite" />
             <Skill skill="SCSS" />
