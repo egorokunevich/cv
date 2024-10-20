@@ -17,11 +17,27 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.contact {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.contact:hover {
+  backdrop-filter: brightness(110%);
+}
+
+.photo {
+  transition: 0.4s;
+}
+
+.photo:hover {
+  scale: 110%;
 }
