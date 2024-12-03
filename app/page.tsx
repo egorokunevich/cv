@@ -8,7 +8,7 @@ import skillsData from './skillsData.json';
 export default function Home() {
   return (
     <div
-      className="flex w-full"
+      className="flex flex-row max-sm:flex-col-reverse w-full"
       style={{
         boxShadow: '0 0 5px -3px #808080',
       }}

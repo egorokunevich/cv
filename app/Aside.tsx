@@ -1,4 +1,7 @@
+'use client';
+
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 import AsideSection from './AsideSection';
 import SkillLevel from './SkillLevel';
@@ -10,55 +13,65 @@ import TelegramSvg from './svg/TelegramSvg';
 import photo from '@/public/images/photo.png';
 
 const Aside = () => {
+  const [width, setWidth] = useState<number>(1920);
+
+  useEffect(() => {
+    const handleResizeWindow = () => setWidth(window.innerWidth);
+    // subscribe to window resize event "onComponentDidMount"
+    window.addEventListener('resize', handleResizeWindow);
+    return () => {
+      // unsubscribe "onComponentDestroy"
+      window.removeEventListener('resize', handleResizeWindow);
+    };
+  }, []);
+
   return (
     <aside
-      className="flex flex-col  items-center  gap-4 max-w-80 w-80"
+      className="flex flex-col  items-center  gap-4 max-w-80 max-sm:max-w-full max-sm:w-full w-80 max-md:w-60"
       style={{
         backgroundColor: '#eee7e1',
         color: '#393836',
         boxShadow: '-2px 0 5px -3px inset #d4d5d6',
       }}
     >
-      <div className="flex flex-col w-full">
-        {/* Background wrapper */}
-        <div
-          className="w-full flex justify-center items-center h-40"
-          style={{
-            backgroundColor: '#37383d',
-          }}
-        >
-          {/* Photo wrapper */}
+      {width >= 640 && (
+        <div className="flex flex-col w-full">
+          {/* Background wrapper */}
           <div
-            className="flex items-center justify-center overflow-hidden"
+            className="w-full flex justify-center items-center h-40 max-sm:invisible"
             style={{
-              width: '140px',
-              height: '140px',
-              borderRadius: '50%',
-              transform: 'translateY(20px)',
+              backgroundColor: '#37383d',
             }}
           >
-            <Image
-              className="photo"
-              src={photo}
-              width={140}
-              height={140}
-              alt={'photo'}
-            />
+            {/* Photo wrapper */}
+            <div
+              className="flex items-center justify-center overflow-hidden"
+              style={{
+                width: '140px',
+                height: '140px',
+                borderRadius: '50%',
+                transform: 'translateY(20px)',
+              }}
+            >
+              <Image
+                className="photo"
+                src={photo}
+                width={140}
+                height={140}
+                alt={'photo'}
+              />
+            </div>
           </div>
+          {/* Triangle */}
+          <div className="triangle w-0 h-5" style={{}}></div>
         </div>
-        {/* Triangle */}
-        <div
-          className="w-0 h-5"
-          style={{
-            border: '160px solid transparent',
-            borderTop: '80px solid #37383d',
-          }}
-        ></div>
-      </div>
+      )}
 
       <div
         className="flex flex-col justify-center px-4 py-8 gap-6"
-        style={{ transform: 'translateY(-160px)' }}
+        style={{
+          transform: width >= 640 ? 'translateY(-160px)' : 'translateY(0)',
+        }}
       >
         <AsideSection title="Contacts">
           <a

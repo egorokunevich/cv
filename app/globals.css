@@ -52,3 +52,15 @@ body {
 .skill:hover {
   border: 1px solid rgb(0, 0, 0, 0.3);
 }
+
+.triangle {
+  border: 160px solid transparent;
+  border-top: 80px solid #37383d;
+}
+
+@media screen and (max-width: 768px) {
+  .triangle {
+    border: 120px solid transparent;
+    border-top: 60px solid #37383d;
+  }
+}

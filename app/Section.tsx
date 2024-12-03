@@ -6,7 +6,7 @@ interface SectionProps extends PropsWithChildren {
 
 const Section = ({ title, children }: SectionProps) => {
   return (
-    <div className="p-5  text-lg">
+    <div className="p-5 max-lg:p-2 text-lg">
       <h2 className="text-3xl px-5 flex justify-end">{title}</h2>
       <div
         className="w-full "
