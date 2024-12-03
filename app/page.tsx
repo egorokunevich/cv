@@ -3,6 +3,7 @@ import EducationArticle from './EducationArticle';
 import Aside from './Aside';
 import Header from './Header';
 import Skill from './Skill';
+import skillsData from './skillsData.json';
 
 export default function Home() {
   return (
@@ -39,24 +40,9 @@ export default function Home() {
         </Section>
         <Section title="Skills">
           <div className="flex  flex-wrap gap-3">
-            <Skill skill="JavaScript" />
-            <Skill skill="TypeScript" />
-            <Skill skill="React" />
-            <Skill skill="Next.js" />
-            <Skill skill="REST" />
-            <Skill skill="GraphQL" />
-            <Skill skill="Redux" />
-            <Skill skill="Zustand" />
-            <Skill skill="RTK Query" />
-            <Skill skill="i18n" />
-            <Skill skill="Zustand" />
-            <Skill skill="Jest" />
-            <Skill skill="Vite" />
-            <Skill skill="SCSS" />
-            <Skill skill="SASS" />
-            <Skill skill="CSS" />
-            <Skill skill="HTML" />
-            <Skill skill="OOP" />
+            {skillsData.skills.map((skill, i) => {
+              return <Skill skill={skill} key={skill + i} />;
+            })}
           </div>
         </Section>
       </section>
