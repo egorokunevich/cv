@@ -14,10 +14,7 @@ const EducationArticle = ({
   certificateLink,
 }: EducationArticleProps) => {
   return (
-    <div
-      className="flex justify-between m-1 px-10 py-2"
-      style={{ backgroundColor: '#FAF7F4' }}
-    >
+    <div className="flex justify-between m-1 px-10 py-2">
       <div className="flex flex-col gap-2 justify-between">
         <h2 className="text-2xl font-semibold max-w-72">{title}</h2>
         <div>

@@ -7,7 +7,12 @@ import skillsData from './skillsData.json';
 
 export default function Home() {
   return (
-    <div className="flex w-full">
+    <div
+      className="flex w-full"
+      style={{
+        boxShadow: '0 0 5px -3px #808080',
+      }}
+    >
       <Aside />
       <section className="w-full">
         <Header />
