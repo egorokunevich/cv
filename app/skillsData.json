@@ -4,6 +4,9 @@
     "TypeScript",
     "React",
     "Next.js",
+    "CSS",
+    "HTML",
+    "SCSS",
     "REST",
     "GraphQL",
     "Redux",
@@ -11,11 +14,6 @@
     "RTK Query",
     "i18n",
     "Jest",
-    "Vite",
-    "SCSS",
-    "SASS",
-    "CSS",
-    "HTML",
-    "OOP"
+    "Vite"
   ]
 }

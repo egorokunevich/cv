@@ -1,11 +1,13 @@
 import Image from 'next/image';
-import photo from '../public/images/photo.png';
-import SkillLevel from './SkillLevel';
+
 import AsideSection from './AsideSection';
+import SkillLevel from './SkillLevel';
 import EmailSvg from './svg/EmailSvg';
 import GithubSvg from './svg/GithubSvg';
-import TelegramSvg from './svg/TelegramSvg';
 import PhoneSvg from './svg/PhoneSvg';
+import TelegramSvg from './svg/TelegramSvg';
+
+import photo from '@/public/images/photo.png';
 
 const Aside = () => {
   return (

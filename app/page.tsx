@@ -1,7 +1,7 @@
-import Section from './Section';
-import EducationArticle from './EducationArticle';
 import Aside from './Aside';
+import EducationArticle from './EducationArticle';
 import Header from './Header';
+import Section from './Section';
 import Skill from './Skill';
 import skillsData from './skillsData.json';
 

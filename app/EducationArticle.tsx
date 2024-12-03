@@ -11,7 +11,6 @@ const EducationArticle = ({
   years,
   faculty,
   specialization,
-  certificateLink,
 }: EducationArticleProps) => {
   return (
     <div className="flex justify-between m-1 px-10 py-2">
