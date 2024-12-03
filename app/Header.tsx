@@ -24,7 +24,7 @@ const Header = () => {
       style={{ backgroundColor: '#37383d', color: '#feffff' }}
     >
       <div className="flex flex-col">
-        <h1 className="w-full text-6xl max-lg:text-4xl max-xsm:text-3xl font-light flex justify-start p-4 max-xsm:p-2 ">
+        <h1 className="w-full text-6xl max-lg:text-4xl max-xsm:text-2xl font-light flex justify-start p-4 max-xsm:p-2 ">
           Yahor Akunevich
         </h1>
         <div className="w-full text-4xl max-lg:text-2xl max-xsm:text-xl font-extralight flex justify-start p-4 max-xsm:p-2 pt-0">
