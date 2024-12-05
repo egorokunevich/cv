@@ -44,7 +44,7 @@ export default function Home() {
           />
         </Section>
         <Section title="Skills">
-          <div className="flex  flex-wrap gap-3">
+          <div className="flex  flex-wrap gap-3 max-xxsm:justify-evenly">
             {skillsData.skills.map((skill, i) => {
               return <Skill skill={skill} key={skill + i} />;
             })}

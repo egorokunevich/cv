@@ -20,6 +20,7 @@ const config: Config = {
       },
       screens: {
         xsm: '490px',
+        xxsm: '360px',
       },
     },
   },

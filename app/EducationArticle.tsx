@@ -13,12 +13,12 @@ const EducationArticle = ({
   specialization,
 }: EducationArticleProps) => {
   return (
-    <div className="flex justify-between m-1 px-10 py-2 max-lg:flex-col">
+    <div className="flex justify-between m-1 px-10 py-2 max-lg:flex-col duration-200">
       <div className="flex flex-col gap-2 justify-between">
-        <h2 className="text-2xl font-semibold max-w-72 max-lg:text-xl">
+        <h2 className="text-2xl font-semibold max-w-72 max-lg:text-xl duration-200">
           {title}
         </h2>
-        <div className="flex justify-start max-lg:justify-end">
+        <div className="flex justify-start max-lg:justify-end duration-200">
           {years[0]} - {years[1]}
         </div>
       </div>
