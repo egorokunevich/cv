@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 import AsideSection from '@/app/components/AsideSection';
 import SkillLevel from '@/app/components/SkillLevel';
-import EmailSvg from '@/app/components/svg/EmailSvg';
-import GithubSvg from '@/app/components/svg/GithubSvg';
-import PhoneSvg from '@/app/components/svg/PhoneSvg';
-import TelegramSvg from '@/app/components/svg/TelegramSvg';
+import EmailSvg from '@/app/components/svg/EmailSvg/EmailSvg';
+import GithubSvg from '@/app/components/svg/GithubSvg/GithubSvg';
+import PhoneSvg from '@/app/components/svg/PhoneSvg/PhoneSvg';
+import TelegramSvg from '@/app/components/svg/TelegramSvg/TelegramSvg';
 import photo from '@/public/images/photo.png';
 
 const Aside = () => {

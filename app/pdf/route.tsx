@@ -9,6 +9,11 @@ import {
 import { Image as PDFImage } from '@react-pdf/renderer'; // Due to Image component lacking alt prop
 import { NextResponse } from 'next/server';
 
+import EmailSvgPDF from '@/app/components/svg/EmailSvg/EmailSvgPDF';
+import GithubSvgPDF from '@/app/components/svg/GithubSvg/GithubSvgPDF';
+import PhoneSvgPDF from '@/app/components/svg/PhoneSvg/PhoneSvgPDF';
+import TelegramSvgPDF from '@/app/components/svg/TelegramSvg/TelegramSvgPDF';
+
 const styles = StyleSheet.create({
   section: { padding: '10px' },
   header: {
@@ -28,6 +33,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: '16px',
     width: '200px',
+    padding: '10px',
     backgroundColor: '#EEE7E1',
     color: '#393836',
   },
@@ -81,6 +87,10 @@ const MyDocument = () => (
           {/* Aside */}
           <View style={styles.aside}>
             <Text style={styles.h2}>Contacts</Text>
+            <EmailSvgPDF />
+            <GithubSvgPDF />
+            <PhoneSvgPDF />
+            <TelegramSvgPDF />
           </View>
         </View>
       </View>
