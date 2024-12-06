@@ -9,8 +9,8 @@ const HeaderPDF = () => {
       {/* Photo */}
       <View
         style={{
-          width: '80px',
-          height: '80px',
+          width: '70px',
+          height: '70px',
           borderRadius: '50%',
           overflow: 'hidden',
         }}

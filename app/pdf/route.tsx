@@ -7,8 +7,8 @@ import HeaderPDF from './componentsPDF/HeaderPDF';
 // Create Document Component
 const MyDocument = () => (
   <Document>
-    <Page size="A4">
-      <View style={{ display: 'flex', flexDirection: 'column' }}>
+    <Page size="A4" style={{ padding: '20px' }}>
+      <View style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
         <HeaderPDF />
 
         <View

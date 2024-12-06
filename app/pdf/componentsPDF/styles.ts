@@ -9,8 +9,9 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     width: '100%',
     height: '100px',
-    backgroundColor: '#37383D',
-    color: '#FEFFFF',
+    // backgroundColor: '#37383D',
+    // color: '#FEFFFF',
+    borderBottom: '1px solid black',
   },
   aside: {
     display: 'flex',
@@ -19,7 +20,7 @@ const styles = StyleSheet.create({
     gap: '16px',
     width: '200px',
     padding: '10px',
-    backgroundColor: '#EEE7E1',
+    // backgroundColor: '#EEE7E1',
     color: '#393836',
   },
   h1: {
