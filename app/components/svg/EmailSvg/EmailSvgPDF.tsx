@@ -6,8 +6,8 @@ const EmailSvgPDF = () => {
   return (
     <View
       style={{
-        width: '20px',
-        height: '20px',
+        width: '16px',
+        height: '16px',
       }}
     >
       <Svg fill="#393836" viewBox="0 0 512 512">

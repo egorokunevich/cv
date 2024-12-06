@@ -6,8 +6,8 @@ const PhoneSvgPDF = () => {
   return (
     <View
       style={{
-        width: '20px',
-        height: '20px',
+        width: '16px',
+        height: '16px',
       }}
     >
       <Svg viewBox="0 0 24 24">
