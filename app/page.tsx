@@ -1,8 +1,8 @@
-import Aside from './Aside';
-import EducationArticle from './EducationArticle';
-import Header from './Header';
-import Section from './Section';
-import Skill from './Skill';
+import Aside from './components/Aside';
+import EducationArticle from './components/EducationArticle';
+import Header from './components/Header';
+import Section from './components/Section';
+import Skill from './components/Skill';
 import skillsData from './skillsData.json';
 
 export default function Home() {
